@@ -1,4 +1,5 @@
 using PetroGXR.WhisperingDoubles.UI;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -10,10 +11,16 @@ namespace PetroGXR.WhisperingDoubles.Managers
         [Header("Managers")]
         [SerializeField] CardsContainer cardsContainer;
         [SerializeField] GameplayManager gameplayManager;
+        [SerializeField] MenuManager menuManager;
 
         [Header("Addressables Asset Paths")]
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
+
+        private void Start()
+        {
+            menuManager.Show();
+        }
 
         public void StartGame(int cards)
         {
@@ -32,8 +39,16 @@ namespace PetroGXR.WhisperingDoubles.Managers
                 faces.Add(face);
             }
 
-            cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
+            StartCoroutine(StartingGame(cards, faces));
+        }
+
+        IEnumerator StartingGame(int cards, List<string> faces)
+        {
+            menuManager.Hide();
+            yield return new WaitForSeconds(0.5f);
             gameplayManager.StartGameplay(Mathf.RoundToInt(cards * 0.5f));
+            yield return new WaitForSeconds(0.25f);
+            cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
         }
 
 #if UNITY_EDITOR
