@@ -83,7 +83,9 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         IEnumerator ShowingCards()
         {
+            yield return new WaitForSeconds(0.5f);
             WaitForSeconds wait = new WaitForSeconds(Mathf.Min(0.1f, showCardsDuration / cards.Count));
+
             foreach(Card card in cards)
             {
                 card.Show();

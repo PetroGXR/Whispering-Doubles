@@ -2,82 +2,21 @@ using PetroGXR.WhisperingDoubles.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using TMPro;
 
 namespace PetroGXR.WhisperingDoubles.Managers
 {
     public class GameManager : MonoBehaviour
     {
-        [Header("Settings")]
-        [SerializeField][Range(5, 50)] int scorePerMatch = 5;
-
-        [Header("UI")]
-        [SerializeField] TextMeshProUGUI textMatches;
-        [SerializeField] TextMeshProUGUI textTurns;
-        [SerializeField] TextMeshProUGUI textScore;
+        [Header("Managers")]
         [SerializeField] CardsContainer cardsContainer;
+        [SerializeField] GameplayManager gameplayManager;
 
         [Header("Addressables Asset Paths")]
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
 
-        Queue<Card> flippedCards = new Queue<Card>();
-        Card firstFlippedCard, secondFlippedCard;
-        bool validFlip;
-        int turns;
-        int matches;
-        int score;
-
-        private void OnEnable()
-        {
-            Card.OnCardFlip += Card_OnCardFlip;
-        }
-
-        private void OnDisable()
-        {
-            Card.OnCardFlip -= Card_OnCardFlip;
-        }
-
-        private void Update()
-        {
-            if(flippedCards.Count >= 2)
-            {
-                firstFlippedCard = flippedCards.Dequeue();
-                secondFlippedCard = flippedCards.Dequeue();
-                validFlip = firstFlippedCard.Id == secondFlippedCard.Id;
-                firstFlippedCard.Shake(validFlip);
-                secondFlippedCard.Shake(validFlip);
-
-                turns++;
-
-                if (validFlip)
-                {
-                    matches++;
-                    score += scorePerMatch;
-                }
-
-                UpdateUI();
-            }
-        }
-
-        private void Card_OnCardFlip(Card card)
-        {
-            flippedCards.Enqueue(card);
-        }
-
-        private void UpdateUI()
-        {
-            textMatches.text = matches.ToString("N0");
-            textTurns.text = turns.ToString("N0");
-            textScore.text = score.ToString("N0");
-        }
-
         public void StartGame(int cards)
         {
-            turns = 0;
-            matches = 0;
-            score = 0;
-
             List<string> faces = new List<string>();
             string face;
 
@@ -94,8 +33,7 @@ namespace PetroGXR.WhisperingDoubles.Managers
             }
 
             cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
-
-            UpdateUI();
+            gameplayManager.StartGameplay();
         }
 
 #if UNITY_EDITOR
