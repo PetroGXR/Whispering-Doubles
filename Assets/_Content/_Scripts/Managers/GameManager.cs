@@ -14,6 +14,37 @@ namespace PetroGXR.WhisperingDoubles.Managers
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
 
+        Queue<Card> flippedCards = new Queue<Card>();
+        Card firstFlippedCard, secondFlippedCard;
+        bool validFlip;
+
+        private void OnEnable()
+        {
+            Card.OnCardFlip += Card_OnCardFlip;
+        }
+
+        private void OnDisable()
+        {
+            Card.OnCardFlip -= Card_OnCardFlip;
+        }
+
+        private void Update()
+        {
+            if(flippedCards.Count >= 2)
+            {
+                firstFlippedCard = flippedCards.Dequeue();
+                secondFlippedCard = flippedCards.Dequeue();
+                validFlip = firstFlippedCard.Id == secondFlippedCard.Id;
+                firstFlippedCard.Shake(validFlip);
+                secondFlippedCard.Shake(validFlip);
+            }
+        }
+
+        private void Card_OnCardFlip(Card card)
+        {
+            flippedCards.Enqueue(card);
+        }
+
         public void StartGame(int cards)
         {
             List<string> faces = new List<string>();

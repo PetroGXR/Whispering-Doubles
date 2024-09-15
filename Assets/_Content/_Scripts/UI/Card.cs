@@ -19,6 +19,8 @@ namespace PetroGXR.WhisperingDoubles.UI
         AsyncOperationHandle<Sprite> handleFace;
         AsyncOperationHandle<Sprite> handleBack;
 
+        bool facedDown;
+
         Animator animator;
         Animator Animator
         {
@@ -33,8 +35,15 @@ namespace PetroGXR.WhisperingDoubles.UI
             }
         }
 
+        public string Id
+        {
+            private set;
+            get;
+        }
+
         public void Setup(string face, string back)
         {
+            Id = face.Replace('/', '-').Replace("_", "").Replace(".", "-");
             Addressables.LoadAssetAsync<Sprite>(face).Completed += OnLoadFaceDone;
             Addressables.LoadAssetAsync<Sprite>(back).Completed += OnLoadBackDone;
         }
@@ -57,13 +66,30 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            OnCardFlip?.Invoke(this);
+            if (!facedDown) return;
+
+            facedDown = false;
             Animator.SetTrigger("FaceUp");
         }
 
         public void Show()
         {
             Animator.SetTrigger("Show");
+        }
+
+        public void Shake(bool valid)
+        {
+            Animator.SetTrigger(valid ? "Valid" : "Invalid");
+        }
+
+        public void FacedUp()
+        {
+            OnCardFlip?.Invoke(this);
+        }
+
+        public void FacedDown()
+        {
+            facedDown = true;
         }
 
         public void Destroy()
