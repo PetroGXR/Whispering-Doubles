@@ -14,6 +14,26 @@ namespace PetroGXR.WhisperingDoubles.Managers
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
 
+        public void StartGame(int cards)
+        {
+            List<string> faces = new List<string>();
+            string face;
+
+            while (faces.Count < cards)
+            {
+                do
+                {
+                    face = cardFaces[Random.Range(0, cardFaces.Count)];
+                }
+                while (faces.Contains(face));
+
+                faces.Add(face);
+                faces.Add(face);
+            }
+
+            cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
+        }
+
 #if UNITY_EDITOR
         [ContextMenu("Load Addressables Asset Paths")]
         private void LoadPaths()
@@ -31,6 +51,12 @@ namespace PetroGXR.WhisperingDoubles.Managers
             {
                 cardBacks.Add(back.AssetPath);
             }
+        }
+
+        [ContextMenu("Test Game")]
+        private void TestGame()
+        {
+            StartGame(Random.Range(2, cardsContainer.MaxCards));
         }
 #endif
     }
