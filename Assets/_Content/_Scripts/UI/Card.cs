@@ -33,19 +33,6 @@ namespace PetroGXR.WhisperingDoubles.UI
             }
         }
 
-        private void OnDestroy()
-        {
-            if (handleFace.IsValid())
-            {
-                Addressables.Release(handleFace);
-            }
-
-            if (handleBack.IsValid())
-            {
-                Addressables.Release(handleBack);
-            }
-        }
-
         public void Setup(string face, string back)
         {
             Addressables.LoadAssetAsync<Sprite>(face).Completed += OnLoadFaceDone;
@@ -77,6 +64,21 @@ namespace PetroGXR.WhisperingDoubles.UI
         public void Show()
         {
             Animator.SetTrigger("Show");
+        }
+
+        public void Destroy()
+        {
+            if (handleFace.IsValid())
+            {
+                Addressables.Release(handleFace);
+            }
+
+            if (handleBack.IsValid())
+            {
+                Addressables.Release(handleBack);
+            }
+
+            Destroy(gameObject);
         }
     }
 }

@@ -36,15 +36,17 @@ namespace PetroGXR.WhisperingDoubles.UI
             }
         }
 
-        public void Setup(string back, List<string> faces)
+        private void AdjustCellSize(int cells)
         {
+            if (cells == 0) return;
+
             RectTransform rectCards = layoutGroup.transform as RectTransform;
 
             float ratio = rectCards.rect.height / rectCards.rect.width;
             int columns = 1;
             int rows = Mathf.CeilToInt(columns * ratio);
 
-            while (rows * columns < faces.Count)
+            while (rows * columns < cells)
             {
                 columns++;
                 rows = Mathf.CeilToInt(columns * ratio);
@@ -52,6 +54,18 @@ namespace PetroGXR.WhisperingDoubles.UI
 
             float minSize = Mathf.Min((rectCards.rect.width - columns * layoutGroup.spacing.x) / columns, (rectCards.rect.height - rows * layoutGroup.spacing.y) / rows);
             layoutGroup.cellSize = Vector2.one * minSize;
+        }
+
+        public void Setup(string back, List<string> faces)
+        {
+            foreach (Card card in cards)
+            {
+                card.Destroy();
+            }
+
+            cards.Clear();
+
+            AdjustCellSize(faces.Count);
 
             while (faces.Count > 0)
             {
