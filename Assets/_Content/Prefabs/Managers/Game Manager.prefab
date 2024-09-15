@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &138440525364944657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 138440525364944656}
+  - component: {fileID: 138440525364944663}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &138440525364944656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138440525364944657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138440525364944663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138440525364944657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd192af52129907418af0a7318b80013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardFaces:
+  - Assets/_Content/Sprites/Animals/animal-eagle.jpg
+  - Assets/_Content/Sprites/Animals/animal-flamingo.jpg
+  - Assets/_Content/Sprites/Animals/animal-panda_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-puppy.jpg
+  - Assets/_Content/Sprites/Animals/animal-wolf_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-rabbit.jpg
+  - Assets/_Content/Sprites/Animals/animal-lion.jpg
+  - Assets/_Content/Sprites/Animals/animal-mouse.jpg
+  - Assets/_Content/Sprites/Animals/animal-otter-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-chimpanzee.jpg
+  - Assets/_Content/Sprites/Animals/animal-swan.jpg
+  - Assets/_Content/Sprites/Animals/animal-puppy-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-black-cat.jpg
+  - Assets/_Content/Sprites/Animals/animal-dolphin-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-chameleon.jpg
+  - Assets/_Content/Sprites/Animals/animal-deer-3.jpg
+  - Assets/_Content/Sprites/Animals/animal-squirrel.jpg
+  - Assets/_Content/Sprites/Animals/animal-birds-23.jpg
+  - Assets/_Content/Sprites/Animals/animal-wolf.jpg
+  - Assets/_Content/Sprites/Animals/animal-lion_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-otter.jpg
+  - Assets/_Content/Sprites/Animals/animal-cat.jpg
+  - Assets/_Content/Sprites/Animals/animal-deer-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-dog_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-elephant.jpg
+  - Assets/_Content/Sprites/Animals/animal-fox.jpg
+  - Assets/_Content/Sprites/Animals/animal-goat.jpg
+  - Assets/_Content/Sprites/Animals/animal-bird.jpg
+  - Assets/_Content/Sprites/Animals/animal-elephant-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-birds-4.jpg
+  - Assets/_Content/Sprites/Animals/animal-dolphin.jpg
+  - Assets/_Content/Sprites/Animals/animal-deer.jpg
+  - Assets/_Content/Sprites/Animals/animal-lion-3.jpg
+  - Assets/_Content/Sprites/Animals/animal-cheetah.jpg
+  - Assets/_Content/Sprites/Animals/animal-lizard.jpg
+  - Assets/_Content/Sprites/Animals/animal-parrot.jpg
+  - Assets/_Content/Sprites/Animals/animal-tiger.jpg
+  - Assets/_Content/Sprites/Animals/animal-frog.jpg
+  - Assets/_Content/Sprites/Animals/animal-goat-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-butterfly.jpg
+  - Assets/_Content/Sprites/Animals/animal-polar-bear-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-raccoon.jpg
+  - Assets/_Content/Sprites/Animals/animal-bird_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-white-tiger.jpg
+  - Assets/_Content/Sprites/Animals/animal-wolf-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-polar-bear.jpg
+  - Assets/_Content/Sprites/Animals/animal-monkey-3.jpg
+  - Assets/_Content/Sprites/Animals/animal-cat_1.jpg
+  - Assets/_Content/Sprites/Animals/animal-raccoon-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-lion-2.jpg
+  - Assets/_Content/Sprites/Animals/animal-dog.jpg
+  - Assets/_Content/Sprites/Animals/animal-turtle.jpg
+  - Assets/_Content/Sprites/Animals/animal-whale.jpg
+  - Assets/_Content/Sprites/Animals/animal-owl.jpg
+  - Assets/_Content/Sprites/Animals/animal-panda.jpg
+  - Assets/_Content/Sprites/Animals/animal-black-panther.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-8.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-10.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-police-car-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-sports-car-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-9.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-19.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-police-car.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-bus.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-van-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-11.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-motorcycle.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-7.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-plane.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-airplane.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-13.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-18.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-sports-car-5.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-6.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-12.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-train.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-21.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-sports-car-4.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-van.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-5.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-kayak.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-4.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-7.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-trail.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-jeep-5.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-6.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-4.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-sports-car.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-14.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-20.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-3.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-16.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-3.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-9.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-ship.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-17.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-jeep-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-2.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-sports-car-3.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-15.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-truck-8.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-jeep.jpg
+  - Assets/_Content/Sprites/Vehicles/vehicle-car-5.jpg
+  cardBacks:
+  - Assets/_Content/Sprites/Cards/card-03.jpg
+  - Assets/_Content/Sprites/Cards/card-04.jpg
+  - Assets/_Content/Sprites/Cards/card-05.jpg
+  - Assets/_Content/Sprites/Cards/card-02.jpg
+  - Assets/_Content/Sprites/Cards/card-01.jpg
