@@ -1,0 +1,580 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a177ae25d8c754b4aaea01406b3d2582
+  m_SerializeEntries:
+  - m_GUID: 14ec73b4cdb3fdc47b0b714c5620bf8a
+    m_Address: Assets/_Content/Sprites/Animals/animal-eagle.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 8de15df300b1f704d88edcc2977e5c89
+    m_Address: Assets/_Content/Sprites/Animals/animal-flamingo.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: e6cde3faec2b7bf46abc57e03c925a42
+    m_Address: Assets/_Content/Sprites/Animals/animal-panda_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 764214fd34a7e8845b652c8be551588b
+    m_Address: Assets/_Content/Sprites/Animals/animal-puppy.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: ef37280fd903f144e9586e06a9311234
+    m_Address: Assets/_Content/Sprites/Animals/animal-wolf_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 3eb0e5251b399c7489928bdb832f46cc
+    m_Address: Assets/_Content/Sprites/Animals/animal-rabbit.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a7c05f7e2523d004586564bb976b18fa
+    m_Address: Assets/_Content/Sprites/Animals/animal-lion.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 28de2f7142b47f04d9baf4b35f2fe383
+    m_Address: Assets/_Content/Sprites/Animals/animal-mouse.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a56c4f51be1d8c148b1d85c4cd84f91f
+    m_Address: Assets/_Content/Sprites/Animals/animal-otter-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 4aa7c5131c3f13c4c83627e6548bb4ef
+    m_Address: Assets/_Content/Sprites/Animals/animal-chimpanzee.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: b55af2eb12f0226498832a42c5e6a9b5
+    m_Address: Assets/_Content/Sprites/Animals/animal-swan.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 0e6cba01743166d43a2034d21df4795b
+    m_Address: Assets/_Content/Sprites/Animals/animal-puppy-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: dd232327e3f53a545b366e206098fa1e
+    m_Address: Assets/_Content/Sprites/Animals/animal-black-cat.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d1d79282fb539d9419e10fc14bea7469
+    m_Address: Assets/_Content/Sprites/Animals/animal-dolphin-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: afd7522dead94df45ad69d2836f81868
+    m_Address: Assets/_Content/Sprites/Animals/animal-chameleon.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 952aba39672ccc94e8f2d050d38a07b8
+    m_Address: Assets/_Content/Sprites/Animals/animal-deer-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 025eda9a877ac244694e07ede38fb1d4
+    m_Address: Assets/_Content/Sprites/Animals/animal-squirrel.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 0d446c1a8ce2faa4cb2a333e43a72c9a
+    m_Address: Assets/_Content/Sprites/Animals/animal-birds-23.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 1009fbfd909af324ebc5c6b79f8e8ba0
+    m_Address: Assets/_Content/Sprites/Animals/animal-wolf.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a67858d11377af841b7b171ad875c333
+    m_Address: Assets/_Content/Sprites/Animals/animal-lion_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d6abaec3da8d19b42ae2e05a01de0d24
+    m_Address: Assets/_Content/Sprites/Animals/animal-otter.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f75d220f73dc43441a6c80bd0fab335c
+    m_Address: Assets/_Content/Sprites/Animals/animal-cat.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: caca560a11175204cab1cb5a8a32b63f
+    m_Address: Assets/_Content/Sprites/Animals/animal-deer-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a59cd3d3328235a458eefcc3378903c3
+    m_Address: Assets/_Content/Sprites/Animals/animal-dog_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 7621fad0e4c69ba49adaaf45b30c840b
+    m_Address: Assets/_Content/Sprites/Animals/animal-elephant.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 8788e6000236e1f4f84766f673cdf0b8
+    m_Address: Assets/_Content/Sprites/Animals/animal-fox.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 0eb7be689498de445864b3a41298f9e4
+    m_Address: Assets/_Content/Sprites/Animals/animal-goat.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 7fa8f14c36ef7764a8d31bc65063e93d
+    m_Address: Assets/_Content/Sprites/Animals/animal-bird.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a401c7282483bfd4bb22da6102b7a3f4
+    m_Address: Assets/_Content/Sprites/Animals/animal-elephant-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 415597d3deefc3b4c9368304801cffd2
+    m_Address: Assets/_Content/Sprites/Animals/animal-birds-4.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: c93447aa8fdcaf54785b3dce990784f1
+    m_Address: Assets/_Content/Sprites/Animals/animal-dolphin.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: acbe2b7dd114cb64cbccba67ce3bb986
+    m_Address: Assets/_Content/Sprites/Animals/animal-deer.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: b32bb3f0c17ca364cafc4ccf96107ca6
+    m_Address: Assets/_Content/Sprites/Animals/animal-lion-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 7ea5cfa1553981245bec52e678f2707c
+    m_Address: Assets/_Content/Sprites/Animals/animal-cheetah.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d3a118e7401509440b9045181dbda59d
+    m_Address: Assets/_Content/Sprites/Animals/animal-lizard.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: c1f84002e6c6b264d823562eec8959ec
+    m_Address: Assets/_Content/Sprites/Animals/animal-parrot.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 00f42b5bc1281bb4c963485b0e8a253e
+    m_Address: Assets/_Content/Sprites/Animals/animal-tiger.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 458bb4ed595cda0498fbe7f0a815214b
+    m_Address: Assets/_Content/Sprites/Animals/animal-frog.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: c4091f58ee9b77d42b3eb726474acd29
+    m_Address: Assets/_Content/Sprites/Animals/animal-goat-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 20e1223429bb5444389c84cfcc803218
+    m_Address: Assets/_Content/Sprites/Animals/animal-butterfly.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 1d5770d5402e9e44080fcddfe499e52d
+    m_Address: Assets/_Content/Sprites/Animals/animal-polar-bear-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: e950722fd942cd943bf03c6f484728a2
+    m_Address: Assets/_Content/Sprites/Animals/animal-raccoon.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 9f570b88d919dc046a16a2d9770ffb57
+    m_Address: Assets/_Content/Sprites/Animals/animal-bird_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 566249ae3d0e5f94280ccc644633f3f5
+    m_Address: Assets/_Content/Sprites/Animals/animal-white-tiger.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 89676d67fe37d7343aab9cc6de3003b1
+    m_Address: Assets/_Content/Sprites/Animals/animal-wolf-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 8108d01d345fa8445bab3175347fa5df
+    m_Address: Assets/_Content/Sprites/Animals/animal-polar-bear.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 1e7e8754a3ddbeb4787a61e2a4d042b0
+    m_Address: Assets/_Content/Sprites/Animals/animal-monkey-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 094deb24e67a9e04d9d677bbb87e8f2c
+    m_Address: Assets/_Content/Sprites/Animals/animal-cat_1.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: eee173b8a7e67aa49b52bd350199a9b9
+    m_Address: Assets/_Content/Sprites/Animals/animal-raccoon-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 924031a75a952d545ad17ebbca646e76
+    m_Address: Assets/_Content/Sprites/Animals/animal-lion-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 4ff7e8336e767514dbeae10a529112ac
+    m_Address: Assets/_Content/Sprites/Animals/animal-dog.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 9ab4d30476c7c0b479ae1ea78392ee03
+    m_Address: Assets/_Content/Sprites/Animals/animal-turtle.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 30c69b2e222576c48881ec49ee027466
+    m_Address: Assets/_Content/Sprites/Animals/animal-whale.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 8ae63fab740bba842a2773daf300eb34
+    m_Address: Assets/_Content/Sprites/Animals/animal-owl.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f0d5a5bbc3849d34eb3340308641a411
+    m_Address: Assets/_Content/Sprites/Animals/animal-panda.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: b5996c48e2ae0bb489acfd586951539c
+    m_Address: Assets/_Content/Sprites/Animals/animal-black-panther.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 938884da277e1484aa70a52172e3786f
+    m_Address: Assets/_Content/Sprites/Cards/card-03.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardBack
+  - m_GUID: 49c595f691f30584385721d0ef8b679c
+    m_Address: Assets/_Content/Sprites/Cards/card-04.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardBack
+  - m_GUID: 5b85395671008864daefc949335d668d
+    m_Address: Assets/_Content/Sprites/Cards/card-05.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardBack
+  - m_GUID: d32af8627fa5ca743852ebadd41b1134
+    m_Address: Assets/_Content/Sprites/Cards/card-02.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardBack
+  - m_GUID: 1fd49235dba01364a9a17ca415487449
+    m_Address: Assets/_Content/Sprites/Cards/card-01.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardBack
+  - m_GUID: 05e9baeb7c0b1734e884be6307a9baff
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-8.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 784d3852ab40c0447a53f9b7ae160dd1
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-10.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 641fb737d178eec44adb17dcb4fc818c
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-police-car-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 6c1d85b90531b9d4bb5ebdff5362cd61
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-sports-car-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f7688981997e51743abf2c98619e0e9e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-9.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f5837dedb08b8cb4e9d619dd9e01946c
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-19.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: ccbcc15643968c94fb46705f15c79b9b
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-police-car.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d71678898ca861645895286452f35fc5
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-bus.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: fb5f5f2d8c6b1e04ba5cabab30a9c8be
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-van-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 3354b21131d07ab4496e09f68e0ca992
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-11.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 088848adb4058bc4cbbc695cedadee3b
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-motorcycle.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 62f9127114d1532448a6d41f3346e217
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-7.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 048f9118b426346469d02c26c23759f4
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-plane.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: e052290b964b19d45af2706fb3105414
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 238ec736ecfd7ad4294e9cc0b405a82e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-airplane.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 786c06f24f753544ba0e172d09546d6e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-13.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: fb1a12173bb8dc249947981f9c2dd069
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-18.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 6a6687999d0d46941b6c371b1e7afc22
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-sports-car-5.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f7594959ac2473c419c1a8694baa9f3d
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-6.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 1b5abcdf03622b443871ac958d7391dd
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-12.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: bd4defcb125cd7e48a116e4deae1bb26
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-train.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: e02efe4248270254b9468708e57e5026
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-21.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 19e5b2e94715119428803ff516b7d78f
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-sports-car-4.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a02ca2f3cd944dc4090552fe60ad7b18
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-van.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 32c629cf0b96e5e4cb132b3abbb470e7
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-5.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d3a43a0aff300174e93f7428a83b64f1
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-kayak.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: c8162af9ecead3d49ab638f26add10d6
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 7ca664493c0e70d44b5ceca5df1ce355
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-4.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 05204f8c9a93f9f47a84ea5e0c3e8e63
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-7.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 21578814dc57ffb4688a29de65b3fdbd
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-trail.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f12523cdc42a15c4aa94abc78dc3391e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-jeep-5.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 0a364e86ab9b06a4284bc7cc17722573
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-6.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 0fc874d1705c94c4a8b2e55fa3082b20
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-4.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: ef4d6a08f9a477f409d5ef01fd98d5e4
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-sports-car.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a1120c4934c54924cbdb443e2d6ca428
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-14.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 2ef0d4891c086ab489546095f48a1046
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-20.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: dc878cfb4761b5142a23a828a179b191
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 1cf72bcc7cb1deb4e9505046cb10b46e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-16.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: d06194bc604f7364c9fdfe36128df027
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: a402b96b9de702b49b4b6e4222b7e658
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: cdf56018c91608f4295c0c5d631d9d7d
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-9.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: ff09a3a3544dad14899baaa4eaa97842
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-ship.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 4abc04a8a1b57e24f99d043543bc9749
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-17.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: f6ecfced54f3a764787ce5d214a54d27
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-jeep-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: fad36161d4a105940bee3464637a486d
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-2.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: edc1b053d2413ca4a98f166c32fce4cd
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-sports-car-3.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: c62d7fbb515e5c948b8da9e5a2ecf50e
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-15.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 87c685bdae9328f49bc1e57c5abd5dfe
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-truck-8.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 425890b66051c5349b9b51e0a897c629
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-jeep.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  - m_GUID: 817a2d49a3943b043970b87caa45a00c
+    m_Address: Assets/_Content/Sprites/Vehicles/vehicle-car-5.jpg
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - CardFace
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 98de7cf8dffd5dc4f873b18519388c3e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 18374db3caf2c8e468c9660dad0a2f88, type: 2}
+    - {fileID: 11400000, guid: 1fc4703352126ba419e2c7320120fcac, type: 2}
