@@ -87,7 +87,7 @@ namespace PetroGXR.WhisperingDoubles.Managers
         [ContextMenu("Test Game")]
         private void TestGame()
         {
-            StartGame(Random.Range(2, cardsContainer.MaxCards));
+            StartGame(Random.Range(4, 8));
         }
 #endif
     }
