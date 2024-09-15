@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 namespace PetroGXR.WhisperingDoubles.UI
 {
+    [RequireComponent(typeof(Animator))]
     public class Card : MonoBehaviour, IPointerClickHandler
     {
         public static UnityAction<Card> OnCardFlip;
@@ -16,6 +17,20 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         AsyncOperationHandle<Sprite> handleFace;
         AsyncOperationHandle<Sprite> handleBack;
+
+        Animator animator;
+        Animator Animator
+        {
+            get
+            {
+                if(animator == null)
+                {
+                    animator = GetComponent<Animator>();
+                }
+
+                return animator;
+            }
+        }
 
         private void OnDestroy()
         {
@@ -55,6 +70,7 @@ namespace PetroGXR.WhisperingDoubles.UI
         public void OnPointerClick(PointerEventData eventData)
         {
             OnCardFlip?.Invoke(this);
+            Animator.SetTrigger("FaceUp");
         }
     }
 }
