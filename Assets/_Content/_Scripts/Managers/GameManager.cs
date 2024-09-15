@@ -8,9 +8,13 @@ namespace PetroGXR.WhisperingDoubles.Managers
 {
     public class GameManager : MonoBehaviour
     {
+        [Header("Settings")]
+        [SerializeField][Range(5, 50)] int scorePerMatch = 5;
+
         [Header("UI")]
         [SerializeField] TextMeshProUGUI textMatches;
         [SerializeField] TextMeshProUGUI textTurns;
+        [SerializeField] TextMeshProUGUI textScore;
         [SerializeField] CardsContainer cardsContainer;
 
         [Header("Addressables Asset Paths")]
@@ -22,6 +26,7 @@ namespace PetroGXR.WhisperingDoubles.Managers
         bool validFlip;
         int turns;
         int matches;
+        int score;
 
         private void OnEnable()
         {
@@ -48,6 +53,7 @@ namespace PetroGXR.WhisperingDoubles.Managers
                 if (validFlip)
                 {
                     matches++;
+                    score += scorePerMatch;
                 }
 
                 UpdateUI();
@@ -63,12 +69,14 @@ namespace PetroGXR.WhisperingDoubles.Managers
         {
             textMatches.text = matches.ToString("N0");
             textTurns.text = turns.ToString("N0");
+            textScore.text = score.ToString("N0");
         }
 
         public void StartGame(int cards)
         {
             turns = 0;
             matches = 0;
+            score = 0;
 
             List<string> faces = new List<string>();
             string face;
