@@ -1,12 +1,16 @@
+using PetroGXR.WhisperingDoubles.UI;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using UnityEngine;
 
-namespace PetroGXR.WhisperingDoubles
+namespace PetroGXR.WhisperingDoubles.Managers
 {
     public class GameManager : MonoBehaviour
     {
+        [Header("UI")]
+        [SerializeField] CardsContainer cardsContainer;
+
+        [Header("Addressables Asset Paths")]
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
 

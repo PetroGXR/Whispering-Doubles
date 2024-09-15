@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
@@ -8,11 +5,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
-namespace PetroGXR.WhisperingDoubles
+namespace PetroGXR.WhisperingDoubles.UI
 {
-    public class CardManager : MonoBehaviour, IPointerClickHandler
+    public class Card : MonoBehaviour, IPointerClickHandler
     {
-        public static UnityAction<CardManager> OnCardFlip;
+        public static UnityAction<Card> OnCardFlip;
 
         [SerializeField] Image imageFace;
         [SerializeField] Image imageBack;
