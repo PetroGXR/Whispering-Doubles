@@ -9,12 +9,15 @@ namespace PetroGXR.WhisperingDoubles.UI
     public class GameplayManager : MonoBehaviour
     {
         [Header("Settings")]
-        [SerializeField][Range(5, 50)] int scorePerMatch = 5;
+        [SerializeField][Range(10, 100)] int scorePerMatch = 10;
+        [SerializeField][Range(1, 10)] int lossPerTurn = 5;
 
         [Header("UI")]
         [SerializeField] TextMeshProUGUI textMatches;
         [SerializeField] TextMeshProUGUI textTurns;
         [SerializeField] TextMeshProUGUI textScore;
+        [SerializeField] TextMeshProUGUI textFinishScore;
+        [SerializeField] TextMeshProUGUI textFinishBonus;
 
         Queue<Card> flippedCards = new Queue<Card>();
         Card firstFlippedCard, secondFlippedCard;
@@ -22,6 +25,7 @@ namespace PetroGXR.WhisperingDoubles.UI
         int turns;
         int matches;
         int score;
+        int targetMatches;
 
         Animator animator;
         Animator Animator
@@ -66,6 +70,11 @@ namespace PetroGXR.WhisperingDoubles.UI
                 }
 
                 UpdateUI();
+
+                if(matches == targetMatches) 
+                {
+                    Invoke(nameof(FinishGame), 2.5f);
+                }
             }
         }
 
@@ -81,8 +90,17 @@ namespace PetroGXR.WhisperingDoubles.UI
             textScore.text = score.ToString("N0");
         }
 
-        public void StartGameplay()
+        private void FinishGame()
         {
+            int bonus = Mathf.Max(0, score - (turns - matches) * lossPerTurn);
+            textFinishScore.text = score.ToString("N0");
+            textFinishBonus.text = bonus.ToString("N0");
+            Animator.SetTrigger("ShowFinish");
+        }
+
+        public void StartGameplay(int target)
+        {
+            targetMatches = target;
             turns = 0;
             matches = 0;
             score = 0;

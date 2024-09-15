@@ -33,7 +33,7 @@ namespace PetroGXR.WhisperingDoubles.Managers
             }
 
             cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
-            gameplayManager.StartGameplay();
+            gameplayManager.StartGameplay(Mathf.RoundToInt(cards * 0.5f));
         }
 
 #if UNITY_EDITOR
