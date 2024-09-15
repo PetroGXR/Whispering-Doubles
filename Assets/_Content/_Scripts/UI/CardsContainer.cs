@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ namespace PetroGXR.WhisperingDoubles.UI
     {
         [SerializeField] GridLayoutGroup layoutGroup;
         [SerializeField] GameObject prefabCard;
+        [SerializeField] [Range(0.5f, 5f)] float showCardsDuration = 1f;
 
         private List<Card> cards = new List<Card>();
 
@@ -38,6 +40,18 @@ namespace PetroGXR.WhisperingDoubles.UI
                 cards.Add(card);
 
                 faces.RemoveAt(next);
+            }
+
+            StartCoroutine(ShowingCards());
+        }
+
+        IEnumerator ShowingCards()
+        {
+            WaitForSeconds wait = new WaitForSeconds(Mathf.Min(0.1f, showCardsDuration / cards.Count));
+            foreach(Card card in cards)
+            {
+                card.Show();
+                yield return wait;
             }
         }
     }

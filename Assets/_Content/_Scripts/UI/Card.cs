@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
@@ -71,6 +72,11 @@ namespace PetroGXR.WhisperingDoubles.UI
         {
             OnCardFlip?.Invoke(this);
             Animator.SetTrigger("FaceUp");
+        }
+
+        public void Show()
+        {
+            Animator.SetTrigger("Show");
         }
     }
 }

@@ -445,6 +445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layoutGroup: {fileID: 1400689892}
   prefabCard: {fileID: 724370002310895824, guid: 3ab16c45d69e6634cb162245a4676142, type: 3}
+  showCardsDuration: 1
 --- !u!1 &1587749166
 GameObject:
   m_ObjectHideFlags: 0
