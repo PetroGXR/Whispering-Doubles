@@ -2,12 +2,15 @@ using PetroGXR.WhisperingDoubles.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
 
 namespace PetroGXR.WhisperingDoubles.Managers
 {
     public class GameManager : MonoBehaviour
     {
         [Header("UI")]
+        [SerializeField] TextMeshProUGUI textMatches;
+        [SerializeField] TextMeshProUGUI textTurns;
         [SerializeField] CardsContainer cardsContainer;
 
         [Header("Addressables Asset Paths")]
@@ -17,6 +20,8 @@ namespace PetroGXR.WhisperingDoubles.Managers
         Queue<Card> flippedCards = new Queue<Card>();
         Card firstFlippedCard, secondFlippedCard;
         bool validFlip;
+        int turns;
+        int matches;
 
         private void OnEnable()
         {
@@ -37,6 +42,15 @@ namespace PetroGXR.WhisperingDoubles.Managers
                 validFlip = firstFlippedCard.Id == secondFlippedCard.Id;
                 firstFlippedCard.Shake(validFlip);
                 secondFlippedCard.Shake(validFlip);
+
+                turns++;
+
+                if (validFlip)
+                {
+                    matches++;
+                }
+
+                UpdateUI();
             }
         }
 
@@ -45,8 +59,17 @@ namespace PetroGXR.WhisperingDoubles.Managers
             flippedCards.Enqueue(card);
         }
 
+        private void UpdateUI()
+        {
+            textMatches.text = matches.ToString("N0");
+            textTurns.text = turns.ToString("N0");
+        }
+
         public void StartGame(int cards)
         {
+            turns = 0;
+            matches = 0;
+
             List<string> faces = new List<string>();
             string face;
 
@@ -63,6 +86,8 @@ namespace PetroGXR.WhisperingDoubles.Managers
             }
 
             cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
+
+            UpdateUI();
         }
 
 #if UNITY_EDITOR

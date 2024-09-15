@@ -1904,6 +1904,14 @@ PrefabInstance:
       value: Game Manager
       objectReference: {fileID: 0}
     - target: {fileID: 138440525364944663, guid: 088b6f1315b5efd43858dd09c3f470ba, type: 3}
+      propertyPath: textTurns
+      value: 
+      objectReference: {fileID: 2111105682}
+    - target: {fileID: 138440525364944663, guid: 088b6f1315b5efd43858dd09c3f470ba, type: 3}
+      propertyPath: textMatches
+      value: 
+      objectReference: {fileID: 1042391566}
+    - target: {fileID: 138440525364944663, guid: 088b6f1315b5efd43858dd09c3f470ba, type: 3}
       propertyPath: cardsContainer
       value: 
       objectReference: {fileID: 1400689893}
