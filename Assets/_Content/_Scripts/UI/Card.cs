@@ -1,4 +1,6 @@
 using System;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Events;
@@ -20,6 +22,7 @@ namespace PetroGXR.WhisperingDoubles.UI
         AsyncOperationHandle<Sprite> handleBack;
 
         bool facedDown;
+        bool showing;
 
         Animator animator;
         Animator Animator
@@ -66,6 +69,7 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            if (showing) return;
             if (!facedDown) return;
 
             facedDown = false;
@@ -74,7 +78,7 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         public void Show()
         {
-            Animator.SetTrigger("Show");
+            StartCoroutine(Showing());
         }
 
         public void Shake(bool valid)
@@ -84,6 +88,7 @@ namespace PetroGXR.WhisperingDoubles.UI
 
         public void FacedUp()
         {
+            if (showing) return;
             OnCardFlip?.Invoke(this);
         }
 
@@ -105,6 +110,18 @@ namespace PetroGXR.WhisperingDoubles.UI
             }
 
             Destroy(gameObject);
+        }
+
+        IEnumerator Showing()
+        {
+            showing = true;
+            Animator.SetTrigger("Show");
+            yield return new WaitForSeconds(0.25f);
+            Animator.SetTrigger("FaceUp");
+            yield return new WaitForSeconds(1f);
+            Animator.SetTrigger("FaceDown");
+            yield return new WaitForSeconds(0.25f);
+            showing = false;
         }
     }
 }
