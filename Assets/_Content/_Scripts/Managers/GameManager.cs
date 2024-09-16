@@ -17,8 +17,23 @@ namespace PetroGXR.WhisperingDoubles.Managers
         [SerializeField] List<string> cardFaces = new List<string>();
         [SerializeField] List<string> cardBacks = new List<string>();
 
-        private void Start()
+        public static GameManager Instance;
+
+        private void Awake()
         {
+            if(Instance == null) 
+            {
+                Instance = this;
+            }
+            else
+            {
+                DestroyImmediate(gameObject);
+            }
+        }
+
+        IEnumerator Start()
+        {
+            yield return new WaitForEndOfFrame();
             menuManager.Show();
         }
 
