@@ -114,6 +114,8 @@ namespace PetroGXR.WhisperingDoubles.UI
             int bonus = Mathf.Max(0, score - (turns - matches) * lossPerTurn);
             textFinishScore.text = score.ToString("N0");
             textFinishBonus.text = bonus.ToString("N0");
+            UserDataManager.Instance.AddScore(bonus + score);
+            UserDataManager.Instance.CountPlayedLevel();
             Animator.SetTrigger("ShowFinish");
         }
 

@@ -52,25 +52,32 @@ namespace PetroGXR.WhisperingDoubles.UI
             buttonPlus.onClick.AddListener(() =>
             {
                 levelCards += 2;
+                UserDataManager.Instance.SetLevelCards(levelCards);
                 UpdateUI();
             });
 
             buttonMinus.onClick.AddListener(() =>
             {
                 levelCards -= 2;
+                UserDataManager.Instance.SetLevelCards(levelCards);
                 UpdateUI();
             });
+
+            levelCards = UserDataManager.Instance.LevelCards;
+            UpdateUI();
         }
 
         private void UpdateUI()
         {
-            textCards.text = levelCards.ToString();
-
             buttonPlus.interactable = levelCards + 2 <= cardsContainer.MaxCards;
             buttonMinus.interactable = levelCards - 2 >= 4;
 
             imagePlusDisabled.enabled = !buttonPlus.interactable;
             imageMinusDisabled.enabled = !buttonMinus.interactable;
+
+            textTotalScore.text = UserDataManager.Instance.Score.ToString("N0");
+            textLevelsPlayed.text = UserDataManager.Instance.PlayedLevels.ToString("N0");
+            textCards.text = UserDataManager.Instance.LevelCards.ToString();
         }
 
         public void Show()
