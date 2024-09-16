@@ -86,13 +86,18 @@ namespace PetroGXR.WhisperingDoubles.UI
                 {
                     matches++;
                     score += scorePerMatch;
+                    SoundManager.Instance.PlayCorrect();
+                }
+                else
+                {
+                    SoundManager.Instance.PlayWrong();
                 }
 
                 UpdateUI();
 
                 if(matches == targetMatches) 
                 {
-                    Invoke(nameof(FinishGame), 2.5f);
+                    Invoke(nameof(FinishGame), 1.5f);
                 }
             }
         }
@@ -117,6 +122,7 @@ namespace PetroGXR.WhisperingDoubles.UI
             UserDataManager.Instance.AddScore(bonus + score);
             UserDataManager.Instance.CountPlayedLevel();
             Animator.SetTrigger("ShowFinish");
+            SoundManager.Instance.PlayWinner();
         }
 
         public void StartGameplay(int target)

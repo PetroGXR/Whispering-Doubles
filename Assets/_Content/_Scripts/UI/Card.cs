@@ -1,3 +1,4 @@
+using PetroGXR.WhisperingDoubles.Managers;
 using System;
 using System.Collections;
 using Unity.VisualScripting;
@@ -74,6 +75,7 @@ namespace PetroGXR.WhisperingDoubles.UI
 
             facedDown = false;
             Animator.SetTrigger("FaceUp");
+            SoundManager.Instance.PlayFlip();
         }
 
         public void Show()
@@ -118,8 +120,10 @@ namespace PetroGXR.WhisperingDoubles.UI
             Animator.SetTrigger("Show");
             yield return new WaitForSeconds(0.25f);
             Animator.SetTrigger("FaceUp");
+            SoundManager.Instance.PlayFlip();
             yield return new WaitForSeconds(1f);
             Animator.SetTrigger("FaceDown");
+            SoundManager.Instance.PlayFlip();
             yield return new WaitForSeconds(0.25f);
             showing = false;
         }
