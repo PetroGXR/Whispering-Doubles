@@ -45,12 +45,13 @@ namespace PetroGXR.WhisperingDoubles.UI
         {
             buttonPlay.onClick.AddListener(() =>
             {
+                Hide();
                 GameManager.Instance.StartGame(levelCards);
             });
 
             buttonPlus.onClick.AddListener(() =>
             {
-                levelCards +=2;
+                levelCards += 2;
                 UpdateUI();
             });
 

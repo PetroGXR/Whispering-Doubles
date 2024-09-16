@@ -1,7 +1,10 @@
+using PetroGXR.WhisperingDoubles.Managers;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace PetroGXR.WhisperingDoubles.UI
 {
@@ -18,6 +21,8 @@ namespace PetroGXR.WhisperingDoubles.UI
         [SerializeField] TextMeshProUGUI textScore;
         [SerializeField] TextMeshProUGUI textFinishScore;
         [SerializeField] TextMeshProUGUI textFinishBonus;
+        [SerializeField] Button buttonMenu;
+        [SerializeField] Button buttonReplay;
 
         Queue<Card> flippedCards = new Queue<Card>();
         Card firstFlippedCard, secondFlippedCard;
@@ -49,6 +54,20 @@ namespace PetroGXR.WhisperingDoubles.UI
         private void OnDisable()
         {
             Card.OnCardFlip -= Card_OnCardFlip;
+        }
+
+        private void Start()
+        {
+            buttonMenu.onClick.AddListener(() =>
+            {
+                GameManager.Instance.ShowMenu();
+            });
+
+            buttonReplay.onClick.AddListener(() =>
+            {
+                Hide();
+                GameManager.Instance.StartGame(targetMatches * 2);
+            });
         }
 
         private void Update()
@@ -108,6 +127,11 @@ namespace PetroGXR.WhisperingDoubles.UI
             UpdateUI();
 
             Animator.SetTrigger("ShowGameplay");
+        }
+
+        public void Hide()
+        {
+            Animator.SetTrigger("HideFinish");
         }
     }
 }

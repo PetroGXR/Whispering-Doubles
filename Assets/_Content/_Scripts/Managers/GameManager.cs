@@ -57,13 +57,24 @@ namespace PetroGXR.WhisperingDoubles.Managers
             StartCoroutine(StartingGame(cards, faces));
         }
 
+        public void ShowMenu()
+        {
+            StartCoroutine(ShowingMenu());
+        }
+
         IEnumerator StartingGame(int cards, List<string> faces)
         {
-            menuManager.Hide();
             yield return new WaitForSeconds(0.5f);
             gameplayManager.StartGameplay(Mathf.RoundToInt(cards * 0.5f));
             yield return new WaitForSeconds(0.25f);
             cardsContainer.Setup(cardBacks[Random.Range(0, cardBacks.Count)], faces);
+        }
+
+        IEnumerator ShowingMenu()
+        {
+            gameplayManager.Hide();
+            yield return new WaitForSeconds(0.5f);
+            menuManager.Show();
         }
 
 #if UNITY_EDITOR
